@@ -1,0 +1,1 @@
+# LibWinAdapters
