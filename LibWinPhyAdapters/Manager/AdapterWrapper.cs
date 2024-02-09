@@ -27,7 +27,7 @@ namespace LibWinPhyAdapters.Manager
             if (type.IsArray) return Activator.CreateInstance(type, new object[] { 1 });
             return null;
         }
-        private uint InvokeMethod(string methodName, ManagementBaseObject man, InvokeMethodOptions options)
+        private uint InvokeMethod(string methodName, ManagementBaseObject? man, InvokeMethodOptions? options)
         {
             ManagementBaseObject obj = _man.InvokeMethod(methodName, man, options);
             object obj1 = obj["ReturnValue"];

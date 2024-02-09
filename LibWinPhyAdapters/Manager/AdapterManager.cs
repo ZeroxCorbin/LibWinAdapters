@@ -16,9 +16,9 @@ namespace LibWinPhyAdapters.Manager
 {
     public class CNotifyAddrChange
     {
-        public event EventHandler<EventArgs> AddrChangedEvent = null;
+        public event EventHandler<EventArgs>? AddrChangedEvent = null;
 
-        protected Thread TheThread { get; set; }
+        protected Thread? TheThread { get; set; }
 
         protected enum EEvents
         {
@@ -128,7 +128,7 @@ namespace LibWinPhyAdapters.Manager
 
     public class AdapterManager
     {
-        protected CNotifyAddrChange m_oNotifyAddrChange = null;
+        protected CNotifyAddrChange? m_oNotifyAddrChange = null;
 
         public void OnAddrChangedEvent(object sender, EventArgs e)
         {

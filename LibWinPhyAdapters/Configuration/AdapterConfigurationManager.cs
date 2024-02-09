@@ -42,7 +42,7 @@ namespace LibWinPhyAdapters.Configuration
             return null;
         }
 
-        public void SetStatic(string[] ipAddress, string[] subnetMask, string[] defaultIPGateway, string[] dnsServerSearchOrder, uint interfaceIndex, ushort[] gatewayCostMetric = null)
+        public void SetStatic(string[] ipAddress, string[] subnetMask, string[] defaultIPGateway, string[] dnsServerSearchOrder, uint interfaceIndex, ushort[]? gatewayCostMetric = null)
         {
             using (AdapterConfigurationWrapper adapter = GetAdapter(interfaceIndex))
             {
@@ -57,7 +57,7 @@ namespace LibWinPhyAdapters.Configuration
             }
         }
 
-        public void SetStatic(string[] ipAddress, string[] subnetMask, string[] defaultIPGateway, uint interfaceIndex, ushort[] gatewayCostMetric = null)
+        public void SetStatic(string[] ipAddress, string[] subnetMask, string[] defaultIPGateway, uint interfaceIndex, ushort[]? gatewayCostMetric = null)
         {
             using (AdapterConfigurationWrapper adapter = GetAdapter(interfaceIndex))
             {
